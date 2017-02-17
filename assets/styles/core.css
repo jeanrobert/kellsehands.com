@@ -34,8 +34,26 @@ button:hover,
   background-color: #222529;
   color: #fff;
 }
+.row {
+  padding-left: 5%;
+  overflow: hidden;
+}
+.one-half {
+  width: 45%;
+  margin: 0 5% 5% 0;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.one-half:last-child {
+  margin-right: 0;
+}
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .wrapper{
-  width: 80%;
   margin: 0 auto;
 }
 .container {
@@ -81,10 +99,7 @@ button:hover,
 }
 .hero {
   padding-bottom: 150px;
-  background-size: cover;
   background-image: url('../images/hero.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
   background-attachment: fixed;
   text-align: center;
 }
@@ -97,6 +112,30 @@ button:hover,
   color: #fff;
 }
 .content {
-  height: 800px;
+  padding: 5% 0 5% 0;
   background-color: #fff;
+}
+.main .block {
+  height: 400px;
+  border-radius: 4px;
+  background-color: #2b2f35;
+  text-align: center;
+  font-size: 40px;
+  line-height: 400px;
+  color: #fff;
+}
+.main .block a {
+  display: block;
+  transition: all .3s ease;
+  color: inherit;
+}
+.main .block a:hover {
+  background-color: rgba(50,50,50,.5);
+}
+.footer {
+  padding: 50px 0;
+  background-color: #222529;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
 }
