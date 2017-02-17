@@ -9,9 +9,10 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #eee;
   font-weight: 400;
   font-family: 'Work Sans', sans-serif;
-  letter-spacing: .03em;
+  letter-spacing: .02em;
 }
 a {
   display: inline-block;
@@ -30,8 +31,12 @@ button,
 }
 button:hover,
 .button:hover {
-  background-color: #141518;
+  background-color: #222529;
   color: #fff;
+}
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
 }
 .container {
   width: 80%;
@@ -48,15 +53,13 @@ button:hover,
   max-width: 300px;
   float: left;
   display: inline-block;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center 0;
-  font-weight: 700;
-  font-size: 30px;
   color: #fff;
 }
-.nav .trademark img {
+.trademark img {
   width: 100%;
+}
+.trademark img:hover {
+  opacity: .7;
 }
 .menu {
   float: right;
@@ -65,7 +68,7 @@ button:hover,
 #items li {
   float: left;
   display: inline-block;
-  font-size: 15px;
+  font-size: 14px;
   color: #fff;
 }
 #items a {
@@ -77,17 +80,23 @@ button:hover,
   color: #89929f;
 }
 .hero {
-  padding-bottom: 100px;
-  background-image: url('about:blank');
+  padding-bottom: 150px;
+  background-size: cover;
+  background-image: url('../images/hero.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
 }
 .intro h1 {
   max-width: 650px;
-  margin: 100px auto 100px auto;
+  margin: 150px auto 100px auto;
   font-weight: 400;
   font-size: 45px;
   line-height: 1.2em;
   color: #fff;
+}
+.content {
+  height: 800px;
+  background-color: #fff;
 }
