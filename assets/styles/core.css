@@ -104,8 +104,9 @@ button:hover,
   text-align: center;
 }
 .intro h1 {
-  max-width: 650px;
-  margin: 150px auto 100px auto;
+  max-width: 610px;
+  margin: 0 auto;
+  padding: 150px 30px 100px 30px;
   font-weight: 400;
   font-size: 45px;
   line-height: 1.2em;
@@ -138,4 +139,31 @@ button:hover,
   text-align: center;
   font-size: 14px;
   color: #999;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 80%;
+    padding: 0;
+  }
+  .row {
+    padding: 0;
+  }
+  .one-half {
+    width: 100%;
+    margin: 0 0 40px 0;
+  }
+  .content {
+    padding: 40px 0;
+  }
+  #items {
+    display: none;
+  }
+  .hero {
+    padding-bottom: 50px;
+  }
+  .intro h1 {
+    padding: 30px 20px 50px 20px;
+    font-size: 30px;
+  }
 }
