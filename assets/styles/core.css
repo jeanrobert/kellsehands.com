@@ -208,6 +208,29 @@ p a:hover {
   margin: 20px auto;
   line-height: 1.6em;
 }
+.services {
+  padding-bottom: 5%;
+  text-align: center;
+}
+.services a {
+  display: block;
+  overflow: hidden;
+  padding: 15px 0;
+  font-size: 20px;
+}
+.services i {
+  float: right;
+  font-style: normal;
+  font-size: 15px;
+}
+.services .list {
+  margin: 0 auto;
+  float: none;
+  text-align: left;
+}
+.services .list li:last-child {
+  border-bottom: 0;
+}
 .list h2 {
   padding-bottom: 20px;
   line-height: 1.6em;
@@ -215,13 +238,12 @@ p a:hover {
 .list h4 {
   margin-bottom: 30px;
   padding: 15px;
-  background-color: #2b2f35;
+  border: 1px solid  #2b2f35;
   border-radius: 4px;
   font-weight: normal;
+  font-size: 15px;
   line-height: 1.6em;
-  color: #fff;
-}
-.list ul {
+  color: #2b2f35;
 }
 .list li {
   margin: 15px 0;
@@ -229,7 +251,7 @@ p a:hover {
   display: block;
   border-bottom: 1px solid #e9e9e9;
   line-height: 1.6em;
-  font-size: 14px;
+  font-size: 15px;
   color: #333;
 }
 
