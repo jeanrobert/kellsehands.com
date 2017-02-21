@@ -19,6 +19,6 @@
       message = document.getElementById('user-message').value,
         
       e.preventDefault();
-      window.location = 'mailto:chemserve@outlook.com?subject=' + subject + ' - ' + name + '&body=' + message;
+      window.location = 'mailto:chemserve@outlook.com?subject=' + subject + ' from ' + name + '&body=' + message;
   };
 }());
