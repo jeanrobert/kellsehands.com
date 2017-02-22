@@ -16,7 +16,7 @@
       name    = document.getElementById('user-name').value,
       email   = document.getElementById('user-email').value,
       subject = document.getElementById('user-subject').value,
-      message = document.getElementById('user-message').value,
+      message = document.getElementById('user-message').value;
         
       e.preventDefault();
       window.location = 'mailto:chemserve@outlook.com?subject=' + subject + ' from ' + name + '&body=' + message;
