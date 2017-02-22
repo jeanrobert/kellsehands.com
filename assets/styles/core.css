@@ -121,6 +121,30 @@ p a:hover {
   float: right;
   display: inline-block;
 }
+#bars {
+  top: 18px;
+  keft: 0;
+  width: 25px;
+  height: 18px;
+  position: absolute;
+  padding-top: 7px;
+  float: right;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 100px;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+  text-align: center;
+  line-height: 0;
+}
+#bars .bar {
+  width: 10px;
+  height: 1px;
+  margin: 2px auto 0 auto;
+  display: block;
+  background-color: #2b2f35;
+}
 #items li {
   float: left;
   display: inline-block;
@@ -267,7 +291,6 @@ p a:hover {
   padding-left: 10px;
   display: list-item;
 }
-
 .list ol li:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -296,6 +319,9 @@ p a:hover {
   }
   .content {
     padding: 40px 0;
+  }
+  #bars {
+    display: block;
   }
   #items {
     display: none;

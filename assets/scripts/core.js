@@ -4,23 +4,23 @@
 // Function for contact form
 (function () {
   'use strict';
-  
-  var name,
-      email,
-      phone,
-      subject,
-      message,
-      send = document.getElementById('user-send');
-  
-  send.onclick = function (e) {
+  try {
+    var name,
+        email,
+        phone,
+        subject,
+        message,
+        send = document.getElementById('user-send');
+
+    send.onclick = function (e) {
+      e.preventDefault();
       name    = document.getElementById('user-name').value,
       email   = document.getElementById('user-email').value,
       subject = document.getElementById('user-subject').value,
       message = document.getElementById('user-message').value;
-        
-      e.preventDefault();
-      window.location = 'mailto:chemserve@outlook.com?subject=' + subject + ' from ' + name + '&body=' + message;
-  };
+      window.location = 'mailto:tom@kellsehand.com?subject=' + subject + ' - ' + name + '&body=' + message;
+    };
+  } catch(e){}
 }());
 
 
@@ -28,21 +28,19 @@
 // Function for mobile  menu
 (function () {
   'use strict';
-  
-  var name,
-      email,
-      phone,
-      subject,
-      message,
-      send = document.getElementById('user-send');
-  
-  send.onclick = function (e) {
-    e.preventDefault();
-    name    = document.getElementById('user-name').value,
-    email   = document.getElementById('user-email').value,
-    subject = document.getElementById('user-subject').value,
-    message = document.getElementById('user-message').value;
+  try {
+    var bars = document.getElementById('bars'),
+        items = document.getElementById('items');
     
-    window.location = 'mailto:tom@kellsehand.com?subject=' + subject + ' from ' + name + '&body=' + message;
-  };
+    bars.onclick = function (e) {
+      e.preventDefault();
+      if (items.className !== 'show') {
+        items.className = 'show';
+        console.log('show');
+      } else {
+        items.className = 'hide';
+        console.log('hide');
+      }
+    }
+  } catch(e){}
 }());
