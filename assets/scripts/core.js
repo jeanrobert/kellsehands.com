@@ -37,12 +37,11 @@
       send = document.getElementById('user-send');
   
   send.onclick = function (e) {
-      name    = document.getElementById('user-name').value,
-      email   = document.getElementById('user-email').value,
-      subject = document.getElementById('user-subject').value,
-      message = document.getElementById('user-message').value,
-        
-      e.preventDefault();
-      window.location = 'mailto:tom@kellsehand.com?subject=' + subject + ' from ' + name + '&body=' + message;
+    e.preventDefault();
+    name    = document.getElementById('user-name').value,
+    email   = document.getElementById('user-email').value,
+    subject = document.getElementById('user-subject').value,
+    message = document.getElementById('user-message').value;
+    window.location = 'mailto:tom@kellsehand.com?subject=' + subject + ' from ' + name + '&body=' + message;
   };
 }());
