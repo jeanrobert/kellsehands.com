@@ -36,10 +36,8 @@
       e.preventDefault();
       if (items.className !== 'show') {
         items.className = 'show';
-        console.log('show');
       } else {
         items.className = 'hide';
-        console.log('hide');
       }
     }
   } catch(e){}
