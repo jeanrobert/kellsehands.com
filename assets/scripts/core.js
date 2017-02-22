@@ -42,6 +42,7 @@
     email   = document.getElementById('user-email').value,
     subject = document.getElementById('user-subject').value,
     message = document.getElementById('user-message').value;
+    
     window.location = 'mailto:tom@kellsehand.com?subject=' + subject + ' from ' + name + '&body=' + message;
   };
 }());
