@@ -1,2 +1,2 @@
 # kellsehands.com
-Kell’s environment health, and safety service.
+Kell’s environmental health, and safety service.
